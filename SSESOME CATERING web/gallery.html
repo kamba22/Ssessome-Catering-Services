@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+        <div class="logo">Ssesome Catering</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="meals.html">Our Meals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>    
+    </header> 
+
+    <section class="gallery header">
+        <h1>Our Catering Gallery</h1>
+        <p>Explore moments from our catered events and a variety of delicious meals we offer.</p>
+    </section>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="./catering website/puff-puff.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <!-- <div class="full-img" id="fullImgBox">
+        <img src="C:\Users\nsash\Downloads\puff-puff.jpg" id="fullImg>
+        <span onclick=>X</span>
+    </div> -->
+
+    <div class="img-gallery">
+        <img src="./catering website/puff-puff.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/afang_soup_1_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/slider_image_4_1_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/swallow_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/chicken_salad_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/packed_meals_2_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/pacaked_meals_787x968.jpg" onclick="openFullImg(this.src)">
+        <img src="./catering website/beans_and_plantain_787x968.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <script> 
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex"
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    </script>
+
+    <!-- <section class="meal-grid fade-in"> 
+        <div class="gallery item"><img src="C:\Users\nsash\Downloads\puff-puff.jpg" alt="puff-puff"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\OneDrive\Pictures\swallow.jpg" alt="swallow"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\OneDrive\Pictures\slider image 4.jpg" alt="delicious meal"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\OneDrive\Pictures\slider image 3.jpg" alt="delicious meal"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\Downloads\pacaked meals.jpg" alt="packed meals"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\OneDrive\Pictures\packed meals 2.jpg" alt="packed meals"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\Downloads\beans and plantain.jpg" alt="beans and plantain"></div>
+        <div class="gallery item"><img src="C:\Users\nsash\OneDrive\Pictures\chicken salad.jpg" alt="chicken salad"></div>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2025 Ssesome Catering . All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
